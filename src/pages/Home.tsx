@@ -5,7 +5,10 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover"
+} from "@/components/ui/popover";
+import gymBg from "../assets/gymBg.jpg";
+import bullet from "../assets/bullet.png";
+
 
 
 function Home() {
@@ -22,7 +25,7 @@ function Home() {
     <>
 
       <div className="bg-image w-full">
-        <img className="" src="src/assets/gymBg.jpg" alt="" />
+        <img className="" src={gymBg} alt="" />
       </div>
 
       <div className="main-text absolute top-[10%] md:top-[25%] xl:top-[40%] left-[2%] lg:left-[7%]  p-3 w-[50%] ">
@@ -50,15 +53,15 @@ function Home() {
         <p className='text-2xl md:text-3xl font-semibold'>Gear up for the perfect workout</p>
         <div className="bulletBox px-6 my-4 md:text-xl">
           <div className="point flex gap-2 my-2">
-            <img src="src/assets/bullet.png" alt="" />
+            <img src={bullet} alt="" />
             <p>Reach your fitness potential with he right gear</p>
           </div>
           <div className="point flex gap-2 my-2">
-            <img src="src/assets/bullet.png" alt="" />
+            <img src={bullet} alt="" />
             <p>Maximize your training with targeted</p>
           </div>
           <div className="point flex gap-2 my-2">
-            <img src="src/assets/bullet.png" alt="" />
+            <img src={bullet} alt="" />
             <p>Find the perfect excercises for you</p>
           </div>
 
