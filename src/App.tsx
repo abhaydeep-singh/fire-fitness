@@ -1,4 +1,3 @@
-import React from 'react'
 import { Outlet } from 'react-router-dom'
 import { ThemeProvider } from './components/theme-provider'
 import Footer from './components/Footer'
