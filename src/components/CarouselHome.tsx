@@ -7,16 +7,22 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useNavigate } from "react-router-dom";
+import bicep from "../assets/workout/bicep.jpg";
+import back from "../assets/workout/back.jpg";
+import abs from "../assets/workout/abs.jpg";
+import chest from "../assets/workout/chest.jpg";
+import leg from "../assets/workout/leg.jpg";
+import shoulder from "../assets/workout/shoulder.jpg";
 
 export function CarouselHome() {
   // Array of workout images and their corresponding names
   const workouts = [
-    { src: "src/assets/workout/bicep.jpg", name: "Arms" },
-    { src: "src/assets/workout/chest.jpg", name: "Chest" },
-    { src: "src/assets/workout/leg.jpg", name: "Legs" },
-    { src: "src/assets/workout/shoulder.jpg", name: "Shoulders" },
-    { src: "src/assets/workout/abs.jpg", name: "Abs" },
-    { src: "src/assets/workout/back.jpg", name: "Back" },
+    { src: `${bicep}`, name: "Arms" },
+    { src: `${chest}`, name: "Chest" },
+    { src: `${leg}`, name: "Legs" },
+    { src: `${shoulder}`, name: "Shoulders" },
+    { src: `${abs}`, name: "Abs" },
+    { src: `${back}`, name: "Back" },
   ];
 
   const navigate = useNavigate();
